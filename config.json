@@ -38,6 +38,6 @@
 			"url": "http://192.168.1.101:82/switch",
 			"http_method": "GET", 
 			"update_interval": 1000
-		},
+		}
 	]
 }

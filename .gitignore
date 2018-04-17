@@ -1,0 +1,5 @@
+.npmrc
+.tmp
+.vscode
+.sass-cache
+node_modules
