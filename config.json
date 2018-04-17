@@ -8,36 +8,33 @@
 	"accessories":[
 		{
 			"accessory": "NodeMCU",
-			"name": "Living Room Left",
+			"name": "Living Left",
 			"service": "Switch",
 			"characteristics": [
 				"On"
 			],
 			"url": "http://192.168.1.101:81/switch",
-			"http_method": "GET", 
-			"update_interval": 1000
+			"http_method": "GET"
 		},
 		{
 			"accessory": "NodeMCU",
-			"name": "Living Room Right",
+			"name": "Living Right",
 			"service": "Switch",
 			"characteristics": [
 				"On"
 			],
 			"url": "http://192.168.1.101:82/switch",
-			"http_method": "GET", 
-			"update_interval": 1000
+			"http_method": "GET"
 		},
 		{
 			"accessory": "NodeMCU",
-			"name": "Living Room Center",
+			"name": "Living Center",
 			"service": "Switch",
 			"characteristics": [
 				"On"
 			],
 			"url": "http://192.168.1.101:82/switch",
-			"http_method": "GET", 
-			"update_interval": 1000
+			"http_method": "GET"
 		}
 	]
 }

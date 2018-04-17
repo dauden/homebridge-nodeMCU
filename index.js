@@ -62,19 +62,20 @@ NodeMCU.prototype.updateState = function (state) {
 			} 
 			else {
 				try {
-					var response = JSON.parse(body);
+					console.log(body);
+					// var response = JSON.parse(body);
 					
-					for (var index in this.characteristics) {
-						var charac = this.characteristics[index].replace(/\s/g, '');
-						if(response.hasOwnProperty(charac))
-							value[charac] = Number(response[charac]);
-						else
-							this.log("NodeMCU: " + this.characteristics[index] + " has no information");
-					}
+					// for (var index in this.characteristics) {
+					// 	var charac = this.characteristics[index].replace(/\s/g, '');
+					// 	if(response.hasOwnProperty(charac))
+					// 		value[charac] = Number(response[charac]);
+					// 	else
+					// 		this.log("NodeMCU: " + this.characteristics[index] + " has no information");
+					// }
 					
-					if (Object.keys(value).length == 0) {
-						throw new Error('NodeMCU: No valid value');
-					}
+					// if (Object.keys(value).length == 0) {
+					// 	throw new Error('NodeMCU: No valid value');
+					// }
 					
 					this.log('HTTP successful response');
 				} catch (parseErr) {
@@ -142,7 +143,7 @@ NodeMCU.prototype.getServices = function () {
 		this.log("NodeMCU: please set characteristics field in config file");
 	
 	if (this.update_interval > 0) {
-		this.timer = setInterval(this.updateState.bind(this), this.update_interval);
+		//this.timer = setInterval(this.updateState.bind(this), this.update_interval);
 	}
 	
 	function charcHelper(name){
