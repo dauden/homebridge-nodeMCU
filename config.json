@@ -1,0 +1,43 @@
+{
+	"bridge":{
+		"name":"Homebridge",
+		"username":"CC:22:3D:E3:CE:31",
+		"port":51826,
+		"pin":"882-19-484"
+	},
+	"accessories":[
+		{
+			"accessory": "NodeMCU",
+			"name": "Living Room Left",
+			"service": "Switch",
+			"characteristics": [
+				"On"
+			],
+			"url": "http://192.168.1.101:81/switch",
+			"http_method": "GET", 
+			"update_interval": 1000
+		},
+		{
+			"accessory": "NodeMCU",
+			"name": "Living Room Right",
+			"service": "Switch",
+			"characteristics": [
+				"On"
+			],
+			"url": "http://192.168.1.101:82/switch",
+			"http_method": "GET", 
+			"update_interval": 1000
+		},
+		{
+			"accessory": "NodeMCU",
+			"name": "Living Room Center",
+			"service": "Switch",
+			"characteristics": [
+				"On"
+			],
+			"url": "http://192.168.1.101:82/switch",
+			"http_method": "GET", 
+			"update_interval": 1000
+		},
+	]
+}
