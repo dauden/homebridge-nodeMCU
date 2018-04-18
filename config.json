@@ -33,7 +33,17 @@
 			"characteristics": [
 				"On"
 			],
-			"url": "http://192.168.1.101:82/switch",
+			"url": "http://192.168.1.101:83/switch",
+			"http_method": "GET"
+		},
+		{
+			"accessory": "NodeMCU",
+			"name": "Living Outlet",
+			"service": "Switch",
+			"characteristics": [
+				"On"
+			],
+			"url": "http://192.168.1.101:84/switch",
 			"http_method": "GET"
 		}
 	]
