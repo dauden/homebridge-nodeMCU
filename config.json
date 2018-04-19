@@ -8,42 +8,13 @@
 	"accessories":[
 		{
 			"accessory": "NodeMCU",
-			"name": "Living Left",
-			"service": "Switch",
+			"name": "Your device name",
+			"service": "Your service",
 			"characteristics": [
-				"On"
+				"Your",
+				"characteristics"
 			],
-			"url": "http://192.168.1.101:81/switch",
-			"http_method": "GET"
-		},
-		{
-			"accessory": "NodeMCU",
-			"name": "Living Right",
-			"service": "Switch",
-			"characteristics": [
-				"On"
-			],
-			"url": "http://192.168.1.101:82/switch",
-			"http_method": "GET"
-		},
-		{
-			"accessory": "NodeMCU",
-			"name": "Living Center",
-			"service": "Switch",
-			"characteristics": [
-				"On"
-			],
-			"url": "http://192.168.1.101:83/switch",
-			"http_method": "GET"
-		},
-		{
-			"accessory": "NodeMCU",
-			"name": "Living Outlet",
-			"service": "Switch",
-			"characteristics": [
-				"On"
-			],
-			"url": "http://192.168.1.101:84/switch",
+			"url": "your remove ip",
 			"http_method": "GET"
 		}
 	]

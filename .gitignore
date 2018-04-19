@@ -1,4 +1,5 @@
 .npmrc
+configs
 .tmp
 .vscode
 .sass-cache

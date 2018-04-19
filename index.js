@@ -63,7 +63,6 @@ NodeMCU.prototype.updateState = function (state) {
 			else {
 				try {
 					var response = JSON.parse(body);
-					console.log(response);
 					for (var index in this.characteristics) {
 						var charac = this.characteristics[index].replace(/\s/g, '');
 						if(response.hasOwnProperty(charac))
